@@ -163,13 +163,7 @@ if(hasRightVersion) {  // if we've detected an acceptable version
     window.addEventListener("load", (event) => {
         const ruffle = window.RufflePlayer.newest();
         const player = ruffle.createPlayer();
-	    player.config = {
-		    "polyfills": false,
-		    "autoplay": true,
 
-		    
-    // and so on...
-};
         const container = document.getElementById("container");
         container.appendChild(player);
         player.load("MGS_MAIN_WEB_3.swf");
