@@ -164,7 +164,7 @@ window.RufflePlayer.config = {
     "polyfills": true,
     // Options affecting files only
     "autoplay": "on",
-    "unmuteOverlay": "visible",
+    "unmuteOverlay": "hidden",
     "letterbox": "on",
     "warnOnUnsupportedContent": true,
 };
@@ -172,8 +172,8 @@ window.RufflePlayer.config = {
         const ruffle = window.RufflePlayer.newest();
         const player = ruffle.createPlayer();
         const container = document.getElementById("container");
-        container.appendChild(player);
-        player.load("MGS_MAIN_WEB_3.swf");
+        //container.appendChild(player);
+        //player.load("MGS_MAIN_WEB_3.swf");
     });
 </script>
 	<script src="ruffle.js"></script>
