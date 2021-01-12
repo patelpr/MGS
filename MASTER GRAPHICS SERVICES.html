@@ -3,35 +3,26 @@
 	<head>
 
 <title>MASTER GRAPHICS SERVICES</title>
-<script src="ruffle.js"></script>
+<script src="index.js"></script>
 
 </head>s
-<body bgcolor="#797979">
+<body >
 <div id="container" align="center">
 
 </div>
 <script>
-	window.RufflePlayer = window.RufflePlayer || {};
-	window.RufflePlayer.config = {
-    // Options affecting the whole page
-    "publicPath": undefined,
-    "polyfills": true,
+    window.RufflePlayer = window.RufflePlayer || {};
 
-    // Options affecting files only
-    "autoplay": "auto",
-    "unmuteOverlay": "visible",
-    "letterbox": "fullscreen",
-    "warnOnUnsupportedContent": true,
-    "upgradeToHttps": window.location.protocol === "https:",
-};
-    window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("container");
+    window.addEventListener("DOMContentLoaded", () => {
+        let ruffle = window.RufflePlayer.newest();
+        let player = ruffle.createPlayer();
+        let container = document.getElementById("container");
         container.appendChild(player);
         player.load("MGS_MAIN_WEB_3.swf");
     });
 </script>
+<script src="ruffle.js"></script>
+
 </body>
 
 </html>
