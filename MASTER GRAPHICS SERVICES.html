@@ -1,0 +1,37 @@
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<head>
+
+<title>MASTER GRAPHICS SERVICES</title>
+<script src="ruffle.js"></script>
+
+</head>s
+<body bgcolor="#797979">
+<div id="container" align="center">
+
+</div>
+<script>
+	window.RufflePlayer = window.RufflePlayer || {};
+	window.RufflePlayer.config = {
+    // Options affecting the whole page
+    "publicPath": undefined,
+    "polyfills": true,
+
+    // Options affecting files only
+    "autoplay": "auto",
+    "unmuteOverlay": "visible",
+    "letterbox": "fullscreen",
+    "warnOnUnsupportedContent": true,
+    "upgradeToHttps": window.location.protocol === "https:",
+};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("MGS_MAIN_WEB_3.swf");
+    });
+</script>
+</body>
+
+</html>
